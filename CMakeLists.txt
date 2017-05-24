@@ -54,6 +54,9 @@ install(
   "${CMAKE_CURRENT_BINARY_DIR}/cmake/mpark_variant-config-version.cmake"
   DESTINATION lib/cmake/mpark_variant)
 
+# Benchmark.
+add_subdirectory(benchmark)
+
 # Test.
 list(REMOVE_DUPLICATES MPARK_VARIANT_INCLUDE_TESTS)
 
